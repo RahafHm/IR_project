@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Engine</h1>
+        <form action="search.php" method="get">
+            <label for="query">Enter Search Query:</label>
+            <input type="text" id="query" name="query" required><br><br>
+            
+            <label for="search_algorithm">Choose Search Algorithm:</label>
+            <select id="search_algorithm" name="search_algorithm">
+                <option value="boolean">Boolean Model</option>
+                <option value="extended_boolean">Extended Boolean Model</option>
+                <option value="vector">Vector Model</option>
+            </select><br><br>
+            
+            <button type="submit">Search</button>
+        </form>
+        <div id="results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>

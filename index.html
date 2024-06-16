@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR Home Work - Indexing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IR Home Work</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="folder">Select Folder:</label>
+            <input type="file" id="folder" name="folder" webkitdirectory directory multiple required><br><br>
+            
+            <label for="language">Language:</label>
+            <select id="language" name="language">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+            </select><br><br>
+            
+            <label for="algorithm">Choose Indexing Algorithm:</label>
+            <select id="algorithm" name="algorithm">
+                <option value="boolean">Boolean Model</option>
+                <option value="extended_boolean">Extended Boolean Model</option>
+                <option value="vector">Vector Model</option>
+            </select><br><br>
+            
+            <button type="submit">Index Files</button>
+        </form>
+    </div>
+</body>
+</html>
